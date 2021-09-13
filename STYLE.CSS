@@ -1,0 +1,137 @@
+.left-sidebar{
+    width: 15%;
+    height: 200%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:#910730 ;
+}
+.bubbles img{
+    width: 60px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items:TOP;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 70PX;
+    
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+    
+        opacity: 1;
+    }
+    70%{   
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+  
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
+
+.social-media{
+    display: flex;
+    margin-top: 30px;
+    align-items: right;
+}
+.icon{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.icon img
+{
+    width: 100px;
+    align-items:top;
+
+}
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #ff1616;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover{
+    opacity: 1;
+
+}
+.icon:hover{
+    transform: translateY(-5px);
+}
+.person{
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.person img
+{
+    width: 150px;
+    align-items: right;
+
+}
+.person:hover{
+    transform: translateY(-5px);
+}
